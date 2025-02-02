@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vw;
+}
+
+
+
+
+#heading{
+    font-size: 5vw;
+    font-family:"Roboto";
+    font-weight: 500;
+    text-align: center;
+}
+
+
+#para{
+    text-align: center;
+    font-size:1.5vw ;
+    font-family:"Roboto";
+
+}
+
+
+#btn{
+    text-align: center;
+    padding: 0.5vw 1.5vw;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    font-size: 1.3vw;
+    font-family: "Roboto";
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.imgdiv{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.imgdiv>img{
+    height: 23vw;
+    width: 23vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+#marque{
+    height: 10vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0.5vw;
+}
+#marque h3:hover{
+    color: black;
+
+}
+#marque h3{
+    display: inline-block;
+    -webkit-text-stroke: 2px #000000be;
+    font-size: 3vw;
+    color: transparent;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: monument;
+}
+
+@keyframes move {
+    from{
+        transform: translatex(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
